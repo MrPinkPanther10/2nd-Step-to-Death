@@ -16,7 +16,7 @@ header {
 }
 
 #intro {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
     background-color: #f2a3b3;
     color: black;
     display: inline;
@@ -25,11 +25,12 @@ header {
     padding: 30px;
     border-radius: 15px;
     float: left;
+    font-size: 1.5vw;
 }
 
 
 header a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
     color: #f2a3b3;
     text-decoration: none;
     vertical-align: center;
@@ -50,7 +51,7 @@ header nav ul{
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     padding: 30px;
     float: right;
 }
@@ -62,6 +63,75 @@ header nav ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
 }
+
+.cool {
+    padding: 100px;
+    display: block;
+    background-color: pink;
+    background-image:url("../images/asus.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cool-part {
+    width: 35%;
+    margin: 3.5%;
+}
+
+.cool-part h2 {
+    font-style: italic;
+    font-size: 45px;
+    color: #f2a3b3;
+    text-shadow: 0 0 10px rgba(212, 66, 181, 0.5);;
+}
+
+.info{
+    margin: 40px 50px;
+    padding: 70px;
+    width: 100%;
+    display: inline-block;
+    background-color: #f5d6dc
+}
+
+.float-left {
+    border-right: 7px solid #f2a3b3;
+    height: 150px;
+    position:absolute;
+    flex: 1 40%;
+    float: left;
+}
+
+.float-left h2{
+    padding-right: 60px;
+    font-size: 60px;
+    flex: 1 30%;
+}
+
+.float-right {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 70%;
+    padding: 40px;
+}
+
+.float-right p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Navigation Menu (for mobile devices) */
