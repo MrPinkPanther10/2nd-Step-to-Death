@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(243, 219, 235);
+}
+
 header {   
     padding: 20px 30px;
     margin: 0;
@@ -78,7 +82,7 @@ header nav ul li a:hover {
     margin: 3.5%;
 }
 
-.cool-part h2 {
+.cool-part h1 {
     font-style: italic;
     font-size: 45px;
     color: #f2a3b3;
@@ -96,30 +100,28 @@ header nav ul li a:hover {
 
 .info {
     display: inline-block;
-    width: 80%;
-    padding: 80px
+    width: 100%;
+    padding: 80px;
+    justify-content: space-between;
 }
 
 .float-left {
     border-right: 7px solid #f2a3b3;
     height: 150px;
     position:absolute;
-    flex: 1 40%;
     padding-right: 60px;
     font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-/* .float-left h2{
-    padding-right: 60px;
-    font-size: 60px;
-    flex: 1 30%;
-} */
 
 .float-right {
     display: flex;
     flex-wrap: wrap;
     float: right;
     width: 70%;
+    padding-left: 50px;
+    position: relative;
 }
 
 .float-right p {
@@ -132,22 +134,28 @@ header nav ul li a:hover {
     height: 800px;
     width: 80%;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.items h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 5px;
+    background-color: black;
+    color: #f2a3b3;
+    padding: 30px;
+    font-size: 40px;
 }
 
 .items-left {
     border-right: 7px solid #f2a3b3;
-    height: 1000px;
+    height: 1500px;
     position:absolute;
     flex: 1 40%;
     font-size: 50px;
     padding-right: 60px;
 }
 
-.items-small {
-    height: 800px;
-    width: 80%;
-    margin-bottom: 30px;
-}
 
 .runbuddy{
     background-image: url("../images/runbuddy.JPG");
@@ -161,24 +169,127 @@ header nav ul li a:hover {
 
 .runbuddy:hover {
     opacity: 1;
-    transform: scale(1.1);
 }
 
-.challenge1 {
-    background-image:url("../images/challenge1.JPG");
-    background-size: cover;
-    display: block;
+
+.items-small {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 80%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.small-left {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    padding-right: 10px;
+    position: relative;
+}
+
+.small-left h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 5px;
+    background-color: black;
+    color: #f2a3b3;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.small-left img {
     height: 100%;
     width: 100%;
     border: 6px solid #f2a3b3;
     opacity: 0.5;
 }
 
-.challenge1:hover {
+.small-left img:hover {
     opacity: 1;
-    transform: scale(1.1);
 }
 
+.small-left a {
+    background-image:url("../images/challenge1.JPG");
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    border: 6px solid #f2a3b3;
+}
+
+.small-left a:hover {
+    opacity: 1;
+}
+
+.small-right {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.small-right h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    background-color: black;
+    color: #f2a3b3;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.small-right img {
+    height: 100%;
+    width: 100%;
+    border: 6px solid #f2a3b3;
+    opacity: 0.5;
+}
+
+.small-right img:hover {
+    opacity: 1;
+}
+
+.contacts a {
+    font-style: italic;
+    color:black;
+    text-decoration: underline;
+    vertical-align: center;
+}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 70%;
+    padding-left: 50px;
+}
+
+.contacts ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contacts ul li a {
+    padding: 10px 15px;
+    font-size: 40px;
+    padding: 30px;
+    float: right;
+}
+
+.contacts ul li a:hover {
+    color:rgb(255, 0, 170);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
 
 
 
