@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     background-color: rgb(243, 219, 235);
 }
@@ -91,8 +95,6 @@ header nav ul li a:hover {
 .info-wrapper {
     margin: auto;
     width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
     margin-bottom: 80px;
     justify-content: center;
 }
@@ -115,11 +117,10 @@ header nav ul li a:hover {
 }
 
 .float-right {
-    display: flex;
-    flex-wrap: wrap;
     float: right;
-    width: 70%;
-    padding-left: 50px;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 10%;
     position: relative;
 }
 
@@ -159,6 +160,7 @@ header nav ul li a:hover {
 .runbuddy{
     background-image: url("../images/runbuddy.JPG");
     background-size: cover;
+    background-position: center;
     display: block;
     height: 100%;
     width: 100%;
@@ -350,6 +352,7 @@ header nav ul li a:hover {
     .info.wrapper{
         margin: auto;
         padding: auto;
+        padding-left: none;
         display: table;
         vertical-align: middle;
     }
@@ -362,6 +365,7 @@ header nav ul li a:hover {
         flex: 0 100%;
         display: table-cell;
         vertical-align: top;
+        position: relative;
     }
 
     .float-left p {
@@ -370,18 +374,53 @@ header nav ul li a:hover {
     }
 
     .float-right {
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
         flex: 0 100%;
         padding: 0;
-        display:table-cell;
-        width: auto;
-        vertical-align: top;
+        width: 100%;
     }
 
     .float-right p {
         display:flex;
         flex-wrap: wrap;
     }
+
+    .items {
+        width: 100%;
+    }
+
+    .items-left {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 7px solid #f2a3b3; 
+    }
+
+    .items-small {
+        display: table-cell;
+    }
+
+    .runbuddy {
+        opacity: 1;
+    }
+
+    .small-left a {
+        opacity: 1;
+    }
+
+    .small-left img{
+        opacity: 1;
+    }
+
+    .small-right img {
+        display: none;
+    }
+
+    .small-right h3 {
+        display: none;
+    }
+
     .contacts {
         display: inline;
         padding: 5px 10px;
@@ -391,6 +430,12 @@ header nav ul li a:hover {
         float: none;
         display: block;
         align-items: center;
+    }
+
+    .small-left, .small-right {
+        display: block;
+        float: none;
+        width: 100%;
     }
 
 
